@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://blog.techguide.dev/posts/</loc>
     <lastmod>2021-06-06T22:32:48+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/posts/string-functions-in-javascript/</loc>
+    <loc>https://blog.techguide.dev/posts/string-functions-in-javascript/</loc>
     <lastmod>2021-06-06T22:32:48+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://blog.techguide.dev/</loc>
     <lastmod>2021-06-06T22:32:48+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://blog.techguide.dev/categories/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://blog.techguide.dev/tags/</loc>
   </url>
 </urlset>
