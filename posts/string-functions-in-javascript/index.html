@@ -40,7 +40,7 @@
 <meta itemprop="name" content="String Functions in Javascript">
 <meta itemprop="description" content="learn about javascript string class and commonly used methods which will help developer more productive and achieve required functionality"><meta itemprop="datePublished" content="2021-06-06T22:32:48&#43;05:30" />
 <meta itemprop="dateModified" content="2021-06-06T22:32:48&#43;05:30" />
-<meta itemprop="wordCount" content="180">
+<meta itemprop="wordCount" content="200">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="String Functions in Javascript"/>
 <meta name="twitter:description" content="learn about javascript string class and commonly used methods which will help developer more productive and achieve required functionality"/>
@@ -134,34 +134,38 @@
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;this is a string&#34;</span>
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">length</span>)
 <span style="color:#75715e">// output
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">16</span>
-</code></pre></div><h2 id="split">Split</h2>
+</span><span style="color:#75715e">// 16
+</span></code></pre></div><h2 id="split">Split</h2>
 <p>split helps turn sting to array, it accepts a parameter based on which the string is split</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;this is a string element&#34;</span>
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34; &#34;</span>))
 <span style="color:#75715e">// output
-</span><span style="color:#75715e"></span>[<span style="color:#e6db74">&#34;this&#34;</span>, <span style="color:#e6db74">&#34;is&#34;</span>, <span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;string&#34;</span>, <span style="color:#e6db74">&#34;element&#34;</span>]
-</code></pre></div><h2 id="tolowercase">ToLowerCase</h2>
+</span><span style="color:#75715e">// [&#34;this&#34;, &#34;is&#34;, &#34;a&#34;, &#34;string&#34;, &#34;element&#34;]
+</span></code></pre></div><h2 id="tolowercase">ToLowerCase</h2>
 <p><strong>toLowerCase</strong> is used to turn all the characters in the string to lowercase</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;This is String&#34;</span>
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">toLowerCase</span>())
 <span style="color:#75715e">// output
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">this</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">string</span>
-</code></pre></div><h2 id="touppercase">ToUpperCase</h2>
+</span><span style="color:#75715e">// this is string
+</span></code></pre></div><h2 id="touppercase">ToUpperCase</h2>
 <p><strong>toUpperCase</strong> is used to turn all the characters  in the string to capital case</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;This is String&#34;</span>
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">toUpperCase</span>())
 <span style="color:#75715e">// output
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">THIS</span> <span style="color:#a6e22e">IS</span> <span style="color:#a6e22e">A</span> <span style="color:#a6e22e">STRING</span>
-</code></pre></div><h2 id="indexof">IndexOf</h2>
+</span><span style="color:#75715e">// THIS IS A STRING
+</span></code></pre></div><h2 id="indexof">IndexOf</h2>
 <p><strong>indexOf</strong> is used to find index of the specified characters in string</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;what is the index&#34;</span>;
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;t&#34;</span>))
 <span style="color:#75715e">// output
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">8</span>
-</code></pre></div><h2 id="charat">CharAt</h2>
-<p><strong>charAt</strong> is used for finding character using the input index</p>
-<ul class="pa0">
+</span><span style="color:#75715e">// 8
+</span></code></pre></div><h2 id="charat">CharAt</h2>
+<p><strong>charAt</strong> is used for finding character using the input index to get the character</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;find this string&#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">3</span>))
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// d
+</span></code></pre></div><ul class="pa0">
   
 </ul>
 <div class="mt6 instapaper_ignoref">
