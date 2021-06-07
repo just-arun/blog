@@ -40,7 +40,7 @@
 <meta itemprop="name" content="String Functions in Javascript">
 <meta itemprop="description" content="learn about javascript string class and commonly used methods which will help developer more productive and achieve required functionality"><meta itemprop="datePublished" content="2021-06-06T22:32:48&#43;05:30" />
 <meta itemprop="dateModified" content="2021-06-06T22:32:48&#43;05:30" />
-<meta itemprop="wordCount" content="200">
+<meta itemprop="wordCount" content="668">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="String Functions in Javascript"/>
 <meta name="twitter:description" content="learn about javascript string class and commonly used methods which will help developer more productive and achieve required functionality"/>
@@ -173,6 +173,87 @@
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">3</span>))
 <span style="color:#75715e">// output
 </span><span style="color:#75715e">// d
+</span></code></pre></div><h2 id="codepointat">CodePointAt</h2>
+<p><strong>codePointAt</strong> is used to get the keyboard character code of the character in the string based on the index</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;find this string&#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">codePointAt</span>(<span style="color:#ae81ff">5</span>))
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// 116
+</span></code></pre></div><h2 id="includes">Includes</h2>
+<p><strong>includes</strong> is used to check the wether given string is present in the target string, this method will accept a search string</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">string</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;we can search string and return boolean&#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#34;can&#34;</span>))
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// true
+</span></code></pre></div><h2 id="trim">Trim</h2>
+<p><strong>trim</strong> is used to trim out the additional space on start and end of the string</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;   this is a string   &#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">trim</span>())
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// this is a string
+</span></code></pre></div><h2 id="trimleft-trimstart">TrimLeft (TrimStart)</h2>
+<p><strong>trimLeft</strong>, and <strong>trimStart</strong> is used to trim out the white space on the left side of the string</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;   this is some string   &#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">trimLeft</span>())
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// this is some string
+</span></code></pre></div><h2 id="trimright-trimend">TrimRight (TrimEnd)</h2>
+<p><strong>trimRight</strong>, and <strong>trimEnd</strong> is used to trim out the white space on the left side of the string</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;   this is some string   &#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">trimLeft</span>())
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">//    this is some string
+</span></code></pre></div><h2 id="slice">Slice</h2>
+<p><strong>slice</strong> will return the string in between the given start and end index</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;this is a string&#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>))
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// is
+</span></code></pre></div><h2 id="replace">Replace</h2>
+<p><strong>replace</strong> will replace the selector string with the replace string, it accepts two parameter, first parameter will be the selector to select the string and it also supports regular expression the second parameter will be the replacer string</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;this is a string&#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;is&#34;</span>, <span style="color:#e6db74">&#34;was&#34;</span>))
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// this was a string
+</span></code></pre></div><h2 id="repeat">Repeat</h2>
+<p><strong>repeat</strong> is used to repeat the string for the given count</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;this is a string&#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">repeat</span>(<span style="color:#ae81ff">3</span>))
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// this is a stringthis is a stringthis is a string
+</span></code></pre></div><h2 id="link">Link</h2>
+<p><strong>link</strong> is used to convert the given string to wrap with a tag and point to the given url which we pass as parameter</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;techguide&#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">link</span>(<span style="color:#e6db74">&#34;https://techguide.dev&#34;</span>));
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// &lt;a href=&#34;https://techguide.dev&#34;&gt;techguide&lt;/a&gt;
+</span></code></pre></div><h2 id="big-bold-italics-sub-strike-small">Big, Bold, Italics, Sub, Strike, small</h2>
+<p><strong>big</strong>, <strong>bold</strong>, <strong>italics</strong>, <strong>sub</strong>, <strong>strike</strong>, <strong>small</strong> wraps string with the tag of the method name to return as html tag</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;this is string&#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">big</span>());
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">bold</span>());
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">italics</span>());
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">sub</span>());
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">strike</span>());
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// &lt;big&gt;this is string&lt;/big&gt;
+</span><span style="color:#75715e">// &lt;b&gt;this is string&lt;/b&gt;
+</span><span style="color:#75715e">// &lt;i&gt;this is string&lt;/i&gt;
+</span><span style="color:#75715e">// &lt;sub&gt;this is string&lt;/sub&gt;
+</span><span style="color:#75715e">// &lt;strike&gt;this is string&lt;/strike&gt;
+</span><span style="color:#75715e">// &lt;small&gt;this is string&lt;/small&gt;
+</span></code></pre></div><h2 id="fontcolor">FontColor</h2>
+<p><strong>fontcolor</strong> is used to wrap the string with a font tag and set the color attribute value which we pass as parameter</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;this is a string&#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">fontcolor</span>(<span style="color:#e6db74">&#34;red&#34;</span>));
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// &lt;font color=&#34;red&#34;&gt;this is a string&lt;/font&gt;
+</span></code></pre></div><h2 id="fontsize">FontSize</h2>
+<p><strong>fontsize</strong> is used to wrap the string with a font tag and set the size attribute value which we pass as parameter</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;this is a string&#34;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">fontsize</span>(<span style="color:#ae81ff">16</span>));
+<span style="color:#75715e">// output
+</span><span style="color:#75715e">// &lt;font size=&#34;16&#34;&gt;this is a string&lt;/font&gt;
 </span></code></pre></div><ul class="pa0">
   
 </ul>
